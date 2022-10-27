@@ -55,6 +55,36 @@ async def right(call: CallbackQuery):
     await call.answer(cache_time=60)
 
 
+@dp.callback_query_handler(text="6")
+async def one(call: CallbackQuery):
+    await call.message.answer_photo(open("picture/a6.jpg", "rb"), caption=f"120 ETH🤑")
+    await call.answer(cache_time=30)
+
+
+@dp.callback_query_handler(text="7")
+async def one2(call: CallbackQuery):
+    await call.message.answer_photo(open("picture/a7.jpg", "rb"), caption=f"120 ETH🤑")
+    await call.answer(cache_time=30)
+
+
+@dp.callback_query_handler(text="8")
+async def one3(call: CallbackQuery):
+    await call.message.answer_photo(open("picture/a8.jpg", "rb"), caption=f"120 ETH🤑")
+    await call.answer(cache_time=30)
+
+
+@dp.callback_query_handler(text="9")
+async def one4(call: CallbackQuery):
+    await call.message.answer_photo(open("picture/a9.jpg", "rb"), caption=f"120 ETH🤑")
+    await call.answer(cache_time=30)
+
+
+@dp.callback_query_handler(text="10")
+async def one4(call: CallbackQuery):
+    await call.message.answer_photo(open("picture/a10.jpg.jpg", "rb"), caption=f"120 ETH🤑")
+    await call.answer(cache_time=30)
+
+
 @dp.message_handler(text="music")
 async def music(msg: Message):
     await msg.answer(f"Musiqalar yaqin orada qo'shiladi, Nosozlik uchun uzr")
